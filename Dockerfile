@@ -6,7 +6,7 @@ MAINTAINER myfunprograms
 #    apt-get install python-matplotlib -y
 
 RUN conda create -n project python=2
-RUN conda install -n project numpy psutil matplotlib pandas jupyter notebook scipy
+RUN conda install -n project numpy psutil matplotlib pandas jupyter notebook scipy scikit-learn=0.17.1
 
 COPY run_jupyter.sh /
 
